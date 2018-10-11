@@ -13,4 +13,3 @@ def bubbleSort( arr ):
         if(flag):
             break
     return arr
-
