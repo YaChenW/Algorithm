@@ -6,10 +6,7 @@ def bubbleSort( arr ):
         flag = True
         for j in range(len(arr)-1):
             if arr[j] > arr[j+1]:
-                change = arr[j]
-                arr[j] = arr[j+1]
-                arr[j+1] = change
+                arr[j],arr[j+1] = arr[j+1],arr[j]
                 flag = False
-        if(flag):
-            break
+        if(flag):break
     return arr
